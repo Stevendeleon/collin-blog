@@ -30,7 +30,7 @@ function Footer() {
           target="_blank"
           className="text-gray-600 transition-all duration-150 ease-in-out hover:text-yellow-100 "
         >
-          <i className={social.iconClassName} aria-hidden="false" />
+          <i aria-hidden className={social.iconClassName} />
         </a>
       </li>
     );
