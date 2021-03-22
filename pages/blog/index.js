@@ -26,7 +26,7 @@ function Blog({ posts }) {
             className="w-auto px-4 py-2 mx-auto my-auto font-semibold text-white duration-200 ease-out transform rounded-md cursor-pointer md:m-2 md:w-48 hover:scale-110 motion-reduce:transform-none"
             style={{ background: `rgba(255,255,255,0.1)` }}
           >
-            View more
+            View Article
           </span>
         </Link>
       </li>
