@@ -11,19 +11,6 @@ function SpecificArticlePage(props) {
   console.log(router.query);
 
   let codeBlock;
-
-  // switch (codeBlock) {
-  //   case router.query.pid == 0:
-  //     codeBlock = pid_0;
-  //     break;
-  //   case router.query.pid == 1:
-  //     codeBlock = pid_1;
-  //     break;
-  //   default:
-  //     codeBlock = pid_def;
-  //     break;
-  // }
-
   if (router.query.pid == 0) {
     codeBlock = pid_0;
   } else if (router.query.pid == 1) {

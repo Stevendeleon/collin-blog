@@ -11,18 +11,20 @@ function Blog(props) {
     return (
       <li
         key={p.id}
-        className="flex flex-row justify-between p-8 mx-auto mb-12 rounded-md"
+        className="flex flex-col justify-between w-full p-8 mx-auto mb-12 rounded-md md:flex-row"
         style={{
           background: `rgba(255, 255, 255, 0.05)`,
-          width: "30rem",
         }}
       >
-        <h1 className="mb-3 text-2xl font-bold" style={{ color: "#a6d1ff" }}>
+        <h1
+          className="py-2 font-bold md:text-2xl sm:text-lg"
+          style={{ color: "#a6d1ff" }}
+        >
           {p.title}
         </h1>
         <Link href={`/blog/article/${p.id}`}>
           <span
-            className="px-4 py-2 font-semibold text-white duration-200 ease-out transform rounded-md cursor-pointer hover:scale-110 motion-reduce:transform-none"
+            className="w-auto px-4 py-2 mx-auto my-auto font-semibold text-white duration-200 ease-out transform rounded-md cursor-pointer md:m-2 md:w-48 hover:scale-110 motion-reduce:transform-none"
             style={{ background: `rgba(255,255,255,0.1)` }}
           >
             View more
@@ -44,7 +46,7 @@ function Blog(props) {
           </pre>
           <p></p>
         </div>
-        <ul className="flex flex-col w-full p-4 mx-auto mt-12">
+        <ul className="flex flex-col items-center justify-center w-full p-4 mx-auto mt-12 text-center">
           {blogPostsList}
         </ul>
       </div>
