@@ -3,7 +3,7 @@
 .code { 
     background: rgba(255,255,255,0.1);
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     margin-top: 2rem;
     --tw-text-opacity: 1;
     color: rgba(209, 213, 219, var(--tw-text-opacity));

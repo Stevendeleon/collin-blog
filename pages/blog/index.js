@@ -5,8 +5,7 @@ import path from "path";
 import fs from "fs/promises";
 import { pid_0 } from "./../../components/codeBlock";
 
-function Blog(props) {
-  const { posts } = props;
+function Blog({ posts }) {
   const blogPostsList = posts.map((p) => {
     return (
       <li
@@ -36,7 +35,7 @@ function Blog(props) {
 
   return (
     <Layout>
-      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto">
         <div className="flex flex-col items-center justify-center w-full mx-auto text-center">
           <h1 className="mb-8 text-3xl font-bold tracking-tight text-gray-300 md:text-5xl ">
             Featured Write-up
@@ -46,7 +45,7 @@ function Blog(props) {
           </pre>
           <p></p>
         </div>
-        <ul className="flex flex-col items-center justify-center w-full p-4 mx-auto mt-12 text-center">
+        <ul className="flex flex-col items-center justify-center w-full p-4 mx-auto mt-4 text-center">
           {blogPostsList}
         </ul>
       </div>

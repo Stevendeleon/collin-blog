@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Nav/Navbar";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       </Head>
       <Navbar />
       <main className="flex flex-col justify-center px-8">{children}</main>
+      <Footer />
     </div>
   );
 };

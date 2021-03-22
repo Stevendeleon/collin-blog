@@ -19,6 +19,6 @@ do
 done`;
 
 export const pid_2 = `class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age`;
+  def __init__(self, name, age):
+     self.name = name
+     self.age = age`;

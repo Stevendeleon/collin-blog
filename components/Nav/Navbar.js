@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { Component } from "react";
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto my-0 bg-transparent sticky-nav md:my-8 bg-opacity-60">
       <Link href="/">
@@ -26,6 +25,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

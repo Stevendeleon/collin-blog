@@ -5,10 +5,8 @@ import path from "path";
 import fs from "fs/promises";
 import { pid_def, pid_0, pid_1, pid_2 } from "./../../../components/codeBlock";
 
-function SpecificArticlePage(props) {
-  const { loadedPost } = props;
+function SpecificArticlePage({ loadedPost }) {
   const router = useRouter();
-  console.log(router.query);
 
   let codeBlock;
   if (router.query.pid == 0) {
