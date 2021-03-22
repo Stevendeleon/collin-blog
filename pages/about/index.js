@@ -30,11 +30,23 @@ function About() {
           Cyber Security. Cyber Security has always interested me even as a kid,
           and computers in general always held a place in my heart for something
           I enjoy. I like to play CTFs and do boxes on websites like{" "}
-          <a href="https://tryhackme.com/" target="_blank">
+          <a
+            href="https://tryhackme.com/"
+            target="_blank"
+            style={{ color: "#a9f737" }}
+          >
             TryHackMe
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.hackthebox.eu/"
+            target="_blank"
+            style={{ color: "#a9f737" }}
+          >
+            HackTheBox
           </a>
-          and HackTheBox. I also enjoy doing Bug Bounties as a hobby while I
-          expand my knowledge every day learning new vulnerabilities.
+          . I also enjoy doing Bug Bounties as a hobby while I expand my
+          knowledge every day learning new vulnerabilities.
           <br />
           <br />
           Here on my blog you will find writeups for rooms/boxes on either
