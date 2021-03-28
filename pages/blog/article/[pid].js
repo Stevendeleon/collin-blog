@@ -11,12 +11,6 @@ function SpecificArticlePage({ loadedPost }) {
   let codeBlock;
   if (router.query.pid == 0) {
     codeBlock = pid_0;
-  } else if (router.query.pid == 1) {
-    codeBlock = pid_1;
-  } else if (router.query.pid == 2) {
-    codeBlock = pid_2;
-  } else {
-    codeBlock = pid_def;
   }
 
   return (
