@@ -1,8 +1,8 @@
 import Container from "../components/container";
 import About from "../components/about";
 import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
+// import HeroPost from "../components/hero-post";
+// import Intro from "../components/intro";
 import Layout from "../components/Layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";

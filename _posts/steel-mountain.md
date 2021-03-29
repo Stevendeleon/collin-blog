@@ -56,8 +56,7 @@ Running `pwd` I found by default I was put in the directory under the Users\bill
 
 On the Desktop there was a user.txt file, so I ran `cat user.txt` to get the flag
 
-**Answer:** 
-``` b04763b6fcf51fcd7c13abc7db4fd365 ```
+**Answer:**  <span style="background-color: #111827; color: #FDE667; font-weight:500; font-size: 1rem; border-radius: 0.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.5rem; padding-right: 0.5rem">b04763b6fcf51fcd7c13abc7db4fd365</span>
 
 # Task 3 - Privilege Escalation (With Metasploit)
 
@@ -73,7 +72,7 @@ On the box it tells you to run `load powershell` in the meterpreter then `powers
 
 I checked to run the script with `./PowerUp.ps1` and it might've executed, but I checked for the CanRestart option with the command `invoke-allchecks` 
 
-**Answer:** ``` AdvancedSystemCareService9 ```
+**Answer:**  <span style="background-color: #111827; color: #FDE667; font-weight:500; font-size: 1rem; border-radius: 0.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.5rem; padding-right: 0.5rem">AdvancedSystemCareService9</span>
 
 ## What is the root flag?
 
@@ -89,17 +88,17 @@ Run the exploit, and go into the old meterpreter with `sessions 0`
 
 In here, cd into the Advanced SystemCare in the Program Files x86.
 
-Open a shell with `shell` and stop the program with `sc stop AdvancedSystemCareService9` 
+Open a shell with `shell` and stop the program with `sc stop`<span style="background-color: #111827; color: #FDE667; font-weight:500; font-size: 1rem; border-radius: 0.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.5rem; padding-right: 0.5rem">AdvancedSystemCareService9</span>
 
 Exit out of this shell and upload the .exe you made with msfvenom into the Advanced SystemCare folder. 
 
-Go back into the shell, and start the service with `sc start AdvancedSystemCareService9` 
+Go back into the shell, and start the service with `sc start`<span style="background-color: #111827; color: #FDE667; font-weight:500; font-size: 1rem; border-radius: 0.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.5rem; padding-right: 0.5rem">AdvancedSystemCareService9</span>
 
 This should launch the program with your executable making it so you can get root access. 
 
 Look around in the root folder for the root.txt file.
 
-**Answer:** ``` 9af5f314f57607c00fd09803a587db80 ```
+**Answer:** <span style="background-color: #111827; color: #FDE667; font-weight:500; font-size: .92rem; border-radius: 0.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.5rem; padding-right: 0.5rem">9af5f314f57607c00fd09803a587db80</span>
 
 # Task 4 - Access and Escalation Without Metasploit
 
