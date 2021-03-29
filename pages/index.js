@@ -1,17 +1,36 @@
-import Layout from "../components/Layout";
+import Container from "../components/container";
+import About from "../components/about";
+import MoreStories from "../components/more-stories";
+import HeroPost from "../components/hero-post";
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import { getAllPosts } from "../lib/api";
+import Head from "next/head";
+import { HOMEPAGE } from "../lib/constants";
 
-export default function Home() {
+export default function Index({ allPosts }) {
+  const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1);
   return (
-    <Layout>
-      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mt-24 text-3xl font-bold tracking-tight text-gray-100 md:text-5xl ">
-          Hello{" "}
-          <code className="pl-2 text-blue-200 transition-all duration-200 ease-in cursor-text hover:text-blue-600">
-            {" "}
-            world()
-          </code>
-        </h1>
-      </div>
-    </Layout>
+    <>
+      <Layout>
+        <Head>
+          <title>Collin Orner | {HOMEPAGE}</title>
+        </Head>
+        <Container>
+          {/* <Intro /> */}
+          <About />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        </Container>
+      </Layout>
+    </>
   );
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts(["title", "date", "slug", "author", "excerpt"]);
+
+  return {
+    props: { allPosts },
+  };
 }

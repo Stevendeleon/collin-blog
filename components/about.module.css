@@ -2,6 +2,8 @@
 
 .font{ 
     font-family: 'Open Sans', sans-serif;
-    --tw-text-opacity: 1;
-    color: rgba(229, 231, 235, var(--tw-text-opacity));
+    font-size: 1.185rem;
+    font-weight: 300;
+    letter-spacing: 0.0325rem;
+    color:rgb(212, 234, 255)
 }
