@@ -2,7 +2,7 @@ import styles from "./about.module.css";
 
 function About() {
   return (
-    <div className="flex flex-col items-start justify-center max-w-2xl pb-24 md:max-w-4xl lg:max-w-6xl">
+    <div className="flex flex-col items-start justify-center max-w-2xl mb-12 md:max-w-4xl lg:max-w-6xl">
       <h1 className="mt-20 mb-6 text-6xl font-bold leading-tight tracking-tighter md:text-7xl md:pr-8 lg:text-8xl">
         Collin Orner 🐺
       </h1>
