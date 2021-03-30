@@ -43,7 +43,7 @@ export default function Post({ post, morePosts, preview }) {
         >
           <Container>
             <div className="flex flex-col items-center lg:flex-row">
-              <div className="flex flex-col items-center justify-center w-full lg:flex-row lg:pl-4">
+              <div className="flex flex-col items-center justify-center w-full lg:flex-row ">
                 <ul className="flex flex-row">{socialIcons}</ul>
               </div>
             </div>
