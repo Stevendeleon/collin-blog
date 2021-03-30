@@ -2,9 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
-// import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
-// import LayoutOld from "../../components/LayoutOld";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
@@ -45,7 +43,7 @@ export default function Post({ post, morePosts, preview }) {
         >
           <Container>
             <div className="flex flex-col items-center lg:flex-row">
-              <div className="flex flex-col items-center justify-center lg:flex-row lg:pl-4 lg:w-1/2">
+              <div className="flex flex-col items-center justify-center w-full lg:flex-row lg:pl-4">
                 <ul className="flex flex-row">{socialIcons}</ul>
               </div>
             </div>
