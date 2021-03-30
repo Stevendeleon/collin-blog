@@ -10,7 +10,7 @@ import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import { socialIcons } from "./../../components/socials";
-import NavBar from "./../../components/NavBar";
+import NavBar from "../../components/NavBar";
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
