@@ -22,7 +22,7 @@
 }
 
 .markdown code {
-  @apply px-2 py-1 text-red-300 rounded bg-codeBlock;
+  @apply px-2 py-1 font-medium text-red-300 rounded bg-codeBlock;
 }
 
 .markdown p {
