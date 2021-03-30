@@ -1,9 +1,9 @@
 import Container from "../components/container";
-import LayoutOld from "../components/LayoutOld";
-import { getAllPosts } from "../lib/api";
+import Layout from "../components/Layout";
 import Head from "next/head";
-import { BLOGPAGE } from "../lib/constants";
 import Link from "next/link";
+import { BLOGPAGE } from "../lib/constants";
+import { getAllPosts } from "../lib/api";
 
 export default function BlogPage({ allPosts }) {
   const posts = allPosts.map((post) => {
@@ -34,7 +34,7 @@ export default function BlogPage({ allPosts }) {
   });
   return (
     <>
-      <LayoutOld>
+      <Layout>
         <Head>
           <title>Collin Orner | {BLOGPAGE}</title>
         </Head>
@@ -49,7 +49,7 @@ export default function BlogPage({ allPosts }) {
             {/* <ul className="flex flex-col w-full p-4 mx-auto mt-12"></ul> */}
           </div>
         </Container>
-      </LayoutOld>
+      </Layout>
     </>
   );
 }

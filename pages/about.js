@@ -1,10 +1,10 @@
-import LayoutOld from "../components/LayoutOld";
+import Layout from "../components/Layout";
 import About from "../components/about";
 
 export default function AboutPage() {
   return (
-    <LayoutOld>
+    <Layout>
       <About />
-    </LayoutOld>
+    </Layout>
   );
 }
