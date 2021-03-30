@@ -1,5 +1,5 @@
 import Meta from "./meta";
-import Navbar from "./Navbar";
+import NavBar from "./NavBar";
 import Footer from "./footer";
 
 export default function Layout({ children }) {
@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         className="min-h-screen text-gray-200"
         style={{ background: "#020828" }}
       >
-        <Navbar />
+        <NavBar />
 
         <main>{children}</main>
         <Footer />
