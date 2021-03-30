@@ -12,18 +12,20 @@ export default function BlogPage({ allPosts }) {
         key={post.slug}
         title={post.title}
         slug={post.slug}
-        className="flex flex-row justify-between p-8 mx-auto mb-12 rounded-md"
+        className="flex flex-col justify-between w-full p-8 mx-auto mb-12 text-center rounded-md md:text-left md:w-9/12 md:flex-row"
         style={{
           background: `rgba(255, 255, 255, 0.05)`,
-          width: "30rem",
         }}
       >
-        <h1 className="mb-3 text-2xl font-bold" style={{ color: "#a6d1ff" }}>
+        <h1
+          className="mb-6 text-2xl font-bold sm:mb-3"
+          style={{ color: "#a6d1ff" }}
+        >
           {post.title}
         </h1>
         <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
           <span
-            className="px-4 py-2 font-semibold text-white duration-200 ease-out transform rounded-md cursor-pointer hover:scale-110 motion-reduce:transform-none"
+            className="px-4 py-2 font-semibold text-center text-white duration-200 ease-out transform rounded-md cursor-pointer hover:scale-110 motion-reduce:transform-none"
             style={{ background: `rgba(255,255,255,0.1)` }}
           >
             View more
@@ -45,8 +47,8 @@ export default function BlogPage({ allPosts }) {
                 Write Ups
               </h1>
             </div>
-            {posts}
-            {/* <ul className="flex flex-col w-full p-4 mx-auto mt-12"></ul> */}
+
+            <ul className="flex flex-col w-full p-4 mx-auto mt-12">{posts}</ul>
           </div>
         </Container>
       </Layout>
