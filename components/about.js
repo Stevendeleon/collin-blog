@@ -1,6 +1,12 @@
+import Head from "next/head";
+import { ABOUT } from "./../lib/constants";
+
 function About() {
   return (
     <div className="flex flex-col justify-center px-8">
+      <Head>
+        <title>Collin Orner | {ABOUT}</title>
+      </Head>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mt-24 mb-5 text-3xl font-bold tracking-tight text-gray-100 md:text-5xl ">
           Hey, I'm <span className="text-blue-400">Collin</span> 🐺
