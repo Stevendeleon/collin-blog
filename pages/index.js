@@ -90,7 +90,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Collin Orner | {HOMEPAGE}</title>
+        <title>collinhacks | {HOMEPAGE}</title>
       </Head>
       <Meta />
       <div
