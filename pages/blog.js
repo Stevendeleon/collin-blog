@@ -38,7 +38,7 @@ export default function BlogPage({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Collin Orner | {BLOGPAGE}</title>
+          <title>collinhacks | {BLOGPAGE}</title>
         </Head>
         <Container>
           <div className="flex flex-col items-start justify-center max-w-4xl mx-auto mb-16">
